@@ -75,7 +75,9 @@ html, body {
   .logo {
     display: block;
     max-width: 100%;
-    margin-bottom: $logo-margin;
+    margin-block: 50px;
+    margin-inline: auto;
+    width: 180px;
   }
 
   &>.search {
@@ -253,6 +255,7 @@ html, body {
   z-index: 10;
   background-color: $main-bg;
   min-height: 100%;
+  overflow-x: clip;
 
   padding-bottom: 1px; // prevent margin overflow
 
@@ -460,6 +463,7 @@ html, body {
   pre>code {
     background-color: transparent;
     padding: 0;
+    text-wrap: balance;
   }
 
   aside {
